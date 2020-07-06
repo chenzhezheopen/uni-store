@@ -1,0 +1,190 @@
+@import "style.less";
+@import "style1.less";
+
+header{
+    background: @top-color1-color;
+}
+html,body{
+    background: @body-color;
+    margin: 0;
+    overflow-x: hidden;
+}
+*{
+    box-sizing: border-box;
+}
+a{
+    color:@font-color ;
+}
+.mui-menu-lable{
+    width: 96%;
+    margin: 10px auto;
+    padding: 15px 15px 10px 15px;
+    background: linear-gradient(to bottom right, @mk-rgba-color1, @mk-rgba-color2);
+    border-radius: 15px;
+//  background:#F83245;
+    .mui-menu-title{
+        width: 100%;
+        .flex();
+        div{
+            flex: 1;
+            .flexc();
+            .column();
+            a:first-child{
+                color: #ffffff;
+                font-size: 16px;
+            }
+            a:last-child{
+                color: #ffffff;
+                font-size: 18px;
+                margin-top: 4px;
+                font-weight: bold;
+            }
+        }
+    }
+    .mui-menu-top{
+        .flexc();
+        margin-top: 30px;
+        div{
+            flex: 1;
+            .flexc();
+            position: relative;
+            a{
+                color: #ffffff;
+                font-size: 13px;
+            }
+        }
+        div:not(:last-child):before{
+            content: '';
+            position: absolute;
+            right: 0;
+            background: #ffffff;
+            width: .5px;
+            height: 80%;
+        }
+    }
+}
+
+.mui-invite{
+    .flexc();
+    width: 95%;
+    padding: 2px 15px;
+    background: #FDF9D6;
+    >*:nth-child(2){
+        flex: 1;
+        padding: 0 10px;
+        margin: 0;
+        color: #D16C23;
+        font-size: 12px;
+        line-height: 16px;
+    }
+    img{
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
+.mui-list{
+    width: 96%;
+    border-radius: 10px;
+    background: #ffffff;
+    margin: 0 auto;
+    margin-top: 15px;
+    .mui-list-title{
+        display: flex;
+        padding: 10px 15px 10px 20px;
+        border-bottom:.5px rgba(150,150,150,.5) solid;
+        a{
+            flex: 1;
+            color: #000000;
+            font-weight: bold;
+            font-size: 14px;
+            position: relative;
+        }
+        a:before{
+            content: '';
+            position: absolute;
+            left: -10px;
+            background: red;
+            width: 3px;
+            height: 14px;
+            top: calc(50% - 8px);
+        }
+    }
+    
+    .mui-list-detail{
+        width: 100%;
+        padding: 10px 5%;
+        .flex();
+        flex-wrap: wrap;
+        .mui-list-box{
+            .flexc();
+            width: 50%;
+            >div:nth-child(1){
+                margin-right: 10px;
+                .flexc();
+                img{
+                    width: 90%;
+                }
+//              background: linear-gradient(45deg, red 11px,transparent 0),
+//                          linear-gradient(135deg, black 11px, transparent 0),
+//                          linear-gradient(225deg, red 11px,transparent 0),
+//                          linear-gradient(315deg, black 11px, transparent 0);
+                width: 30px;
+                height: 30px;
+            }
+            >div:nth-child(2){
+                flex: 1;
+                p{
+                    color: rgba(100,100,100,1);
+                    font-size: 12px;
+                    margin: 3px 0;
+                }
+                p:first-child{
+                    color: #000000;
+                    font-size: 14px;
+                }
+                
+            }
+        }
+        .mui-list-box:nth-child(2n){
+            border-left:.5px rgba(150,150,150,.5) solid;
+            padding-left: 15px;
+        }
+        .mui-list-box:nth-child(2n-1){
+            padding-left: 8px;
+        }
+        .mui-list-box:nth-child(n + 3){
+            border-top:.5px rgba(150,150,150,.5) solid;
+        }
+    }
+}
+.sublim-btn1{
+    width: 96%;
+    padding: 20px 0;
+    .flexc();
+    margin: 0 auto;
+    background: linear-gradient(to bottom right, @mk-rgba-color1, @mk-rgba-color2);
+    border-radius: 10px;
+    font-size: 14px;
+    color: #fff;
+    margin-top: 10px;
+    div{
+        flex: 1;
+        .flexc();
+        flex-direction: column;
+        img{
+            width: 30px;
+        }
+        .effective{
+            margin: 15px 0 5px 0;
+            color: #fff;
+            font-size: 16px;
+        }
+        .number{
+            color: #fff;
+            font-size: 14px;
+        }
+    }
+}
+

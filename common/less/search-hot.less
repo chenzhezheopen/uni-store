@@ -1,0 +1,76 @@
+@import "style.less";
+@import "style1.less";
+
+header{
+    background: none;
+}
+html,body{
+    background: #fafafa;;
+    margin: 0;
+    height: auto;
+    overflow-x: hidden;
+}
+*{
+    box-sizing: border-box;
+}
+a{
+    color:@font-color ;
+}
+
+//全网热榜
+.popular2{
+    .bqian{
+        p{
+            display: -webkit-inline-box;
+            -webkit-text-fill-color: transparent;
+            background: linear-gradient(45deg, @main-rgba-color1, @main-rgba-color2);
+            -webkit-background-clip: text;
+        }
+    }
+    .mui-list-io-explain .mui-io-right img{
+        width: 10px;
+    }
+    .many-content{
+        width: 100%;
+        border-radius: 15px;
+        background: #fff;
+        padding: .2rem;
+        .mui-menu{
+            .flexalign();margin-bottom: 10px;
+            .rank{
+                .flexc();
+                a{font-size: 14px;    margin: 0 10px 0 0;}
+            }
+            .img-contain{
+                height: 60px;width: 60px;border-radius: 5px;overflow: hidden;
+                img{width: 100%;height: 100%;}
+            }
+            .mui-box{
+                .flex();.column();margin-left: 10px;flex: 1;
+                a:first-child{font-size: 14px;color: #000;line-height: 16px;}
+                a{font-size: 12px;color: #888;margin-top: 5px;line-height: 12px;}
+            }
+            .tag{padding: 3px;color: @main-color;border:.5px @main-color solid;border-radius: 3px;background: rgba(45,107,144,.2);font-size: 12px;line-height: 12px;}
+        }
+    }
+}
+.head{
+    position: fixed;
+    top: -79px;
+    padding-top: 40px;
+    width: 100%;
+    left: 0;
+    height: 79px;
+    background: linear-gradient(50deg,@mk-rgba-color1,@mk-rgba-color2);
+    transition: 1s;
+    .flexc();
+    font-size: 20px;
+    -webkit-text-stroke:2px #fff;
+    -webkit-text-fill-color:#000;
+    
+}
+.rd{
+    margin-top: .2rem;
+    .flexalign();
+    img{width: 20px;height: 20px;margin-right: .1rem;}
+}

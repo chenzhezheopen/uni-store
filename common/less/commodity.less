@@ -1,0 +1,271 @@
+@import "style.less";
+@import "style1.less";
+
+header{
+    background: #ffffff;
+}
+html,body{
+    background: #f5f5f5;
+}
+.mui-top-img{
+    position: relative;
+    width: 100%;
+    img{
+        width: 100%;
+    }
+}
+.bottom-fan{
+    position: relative;
+    width: 100%;
+    background: url(http://www.bolecpw.com/code/uni/images/img/top-bg.jpg);
+    padding:15px 10px;
+    >div{.flex();.flexalign();width: 100%;}
+    a{z-index: 2;}
+}
+.bottom-fan:before{
+    content: '';
+    width: 35%;
+    height: 100%;
+    background:linear-gradient(-73deg,#fee102 75%, rgba(0,0,0,0) 0%);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.sort-explain{
+    position: relative;
+    background: #fff;
+    padding-bottom: 10px;
+    .flex();
+    .column();
+    .name{
+        line-height: 25px;
+        padding: 10px 10px;
+    }
+    .tag{
+        padding: 0px 15px;
+        height: 30px;
+        .flexalign();
+        background: #fbe9e9;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        color: @main-color;
+        margin-top: 10px;
+    }
+}
+
+.title-zdy{
+    width: 100%;
+    margin: 10px 0;
+    border-top: .5px #888 solid;
+    .list-title{
+        width: 100%;
+        min-height: 44px;
+        padding: 10px .3rem;
+        border-bottom: .5px #888 solid;
+        .flex();
+        .flexalign();
+        justify-content: space-between;  
+    }
+    .list-title2{
+        width: 100%;
+        padding: 10px .3rem;
+        border-bottom: .5px #888 solid;
+        .flex();
+        .column();
+        justify-content: space-between;  
+        a{
+            line-height: 20px;
+        }
+        p{
+            line-height: 20px;
+        }
+    }
+}
+.mui-list-io-explain{
+    padding: 10px 10upx;
+    border-top: 10px #efefef solid;
+    border-bottom: .5px #888 solid;
+}
+
+.zs-more{
+    .flex();
+    flex-wrap: wrap;
+    width: 100%;
+    >div{
+        width: 33.3%;
+        .flex();
+        .flexalign();
+        .column();
+        padding: 5px 6upx;
+        img{
+            width: 100%;
+            margin-bottom: 5px;
+        }
+        
+    }
+}
+body{
+    font-size:inherit;
+}
+.footer{
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    .flex();
+    .img-c{
+        width: 14%;
+        position: relative;
+        .flexc();
+        img{
+            width: 50upx;
+            height: 50upx;
+        }
+    }
+    .btn-c{
+        flex: 1;
+        padding: 10px 3px;
+        .flexc();
+        .column();
+        a{
+                text-align-last: center;
+        }
+    }
+    .btn-c1{
+        background: #e97f6f;
+    }
+    .btn-c2{
+        background: @main-color;
+    }
+}
+.bottom{
+    width: 100%;
+    img{
+        width: 100%;
+    }
+}
+
+.from-check{transition: .5s; bottom: -100%;position: fixed;width: 100%;left: 0;min-height: 50%;background: #fff;z-index: 9999;border-top: .5px #888 solid;
+//  退出选择
+    .out{position: absolute;right: 10px;top: 10px;width: 25px;}
+//  商品信息
+    .img-box{padding: 6upx;border-bottom: .5px #ccc solid;
+        .flex();
+        .flexalign();
+        .title{margin-left: 10px;justify-content: center;
+            .flex();
+            .column();
+        }
+    }
+//  尺码选择
+    .size{padding:10upx;
+        .size-top{margin: 30upx 0;font-size: 30upx;}
+        .size-select{.flex();flex-wrap: wrap;
+            .size-list1{border: .5px #f2f2f2 solid;width: 70upx;height: 50upx;border-radius: 25upx;.flexc();font-size: 22upx;margin-right: 9px;background: #f2f2f2;box-sizing: border-box;}
+        }
+        .size-select2{.flex();flex-wrap: wrap;
+            .size-list1{border: .5px #f2f2f2 solid;padding: 10upx; height: 50upx;border-radius: 25upx;.flexc();font-size: 22upx;margin-right: 9px;background: #f2f2f2;box-sizing: border-box;}
+        }
+        .select{
+            .check{background:@main-rgba-color2;border: .5px @main-color solid;color: @main-color;}
+        }
+    }
+//  数量
+    .price-box{padding: .2rem;margin: 10px 0;border-bottom: .5px #ccc solid;
+        .flex();
+        .flexalign();
+        .number{
+            .flex();
+            .flexalign();
+            input{height: 40upx;margin:0 .2rem;border: 1px #000 solid;width:100upx;padding: 0;text-align: center;}
+            .reduce,.add{width: 40upx;height: 40upx;border: 1px #000 solid;border-radius: 3px;
+                .flexc();
+                img{width: 60%;
+                }
+            }
+//          .reduce:hover,.add:hover{
+//              background: #000;
+//          }
+            .reduce:active,.add:active{
+                background:rgba(45,107,144,.4);
+            }
+        }
+//      价格
+        .price{
+            flex:1;
+            .flex();
+            align-items: baseline;
+            justify-content: flex-end;
+            .price-all{
+                transition: 1s;
+                font-size: 25px;
+            }
+        }
+    }
+    .submit-btn{
+        position: absolute;bottom: -1px;width: 100%;font-size: 16px;background: @main-color;padding: 30upx 0;left: 0;color: #fff;.flexc();height: auto;
+    }
+}
+.yf{
+    margin: 10px 0;
+    padding: 20px;
+    background: #fff;
+    .flexalign();
+    a:nth-child(1){
+        margin-left: 10upx;
+        width: 80upx;
+    }
+}
+.fx-bottom{
+    position: fixed;transition: 1s;
+    bottom: -100%;
+    width: 100%;
+    background: #fff;
+    z-index: 2000;
+    .mui-list-io-tig{
+        padding: 0 40upx;
+        .top_down{
+            padding: 40upx 0;
+            width:33%;
+        }
+        .img-container{
+            width: 80upx;
+            height: 80upx;
+            img{width: 100%;}
+        }
+    }
+    .fx-out{
+        width: 100%;
+        padding: 30upx 0;
+        .flexc();
+        border-top: 1px #eee solid;
+        img{width: 50upx;height: 50upx;}
+    }
+}
+.num{
+	position: absolute;
+	left: calc(100% - 40upx);
+	top:.05rem;
+	height: 40upx;
+	min-width: 40upx;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #de290e;
+	font-size: 26upx;
+	padding: 0 1px;
+	background: #fff;
+	border:1px #de290e solid;
+	border-radius: 10px;
+}
+.backdrop{
+	position: fixed;
+	z-index: 998;
+	right: 0;
+	height: 100%;
+	bottom: -100%;
+	opacity: 1;
+	left: 0;
+	background-color: rgba(0,0,0,.3);
+}

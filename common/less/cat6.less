@@ -1,0 +1,125 @@
+@import "style.less";
+@import "style1.less";
+
+header{
+    background: rgba(255,255,255,1);
+}
+
+
+
+.store-list{
+    width: 96%;
+    margin-left: 2%;
+    border-radius: 5px;
+    >div:before{
+        content: '';
+        width: 70%;
+        height: 1px;
+        background: #eeeeee;
+        right: 5%;
+        bottom: 0;
+        position: absolute;
+    }
+    >div{
+        background: #fff;
+        margin-top: 10px;
+        position: relative;
+        display: flex;
+        padding: 7px;
+        .flexalign();
+        .img-st{
+            width: 40%;
+            border-radius: 5px;
+        }
+        .content{
+            padding-left: 5px;
+            .flex();
+            width: 60%;
+            .column;
+            justify-content: center;
+            .name{
+                display: -webkit-box;
+                 -webkit-box-orient: vertical;
+                  -webkit-line-clamp: 2;
+                  overflow: hidden;
+            }
+            .gou{width: 100%;.flexalign();justify-content: space-between;margin: 9px 0;
+                .btn{background: @main-color;.flexc();width: .5rem;height: .5rem;border-radius: .25rem;img{width: 70%;}}
+            }
+        }
+    }
+}
+.container{
+    width: 96%;
+    margin-left: 2%;
+    background: #ff444f;
+    padding:30px 10px 20px 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px rgba(255,255,255,.4);
+    position: relative;
+    .top-title{
+        position: absolute;
+        width: 100%;
+        height: 40px;
+        top: -20px;
+        .flexc();
+        .title{
+            .flexc();
+            height: 40px;
+            padding: 0 1rem;
+            border-radius: 20px;
+            letter-spacing: 2px;
+            background: linear-gradient(45deg,#f39a36,#f4bad0);
+        }
+    }
+}
+.mui-content,.mui-scroll{
+                background: #fd214d;
+            }
+            .mui-pull-caption{
+                color: #fff;
+            }
+
+.fix{
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    width: 40px;
+    z-index: 999;
+    height: 40px;
+    background: #000;
+    border-radius: 50%;
+    border: 1px #000 solid;
+    .flexc();
+    .num{
+        position: absolute;
+        left: calc(100% - 10px);
+        top: -10px;
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        font-size: 14px;
+        line-height: 14px;
+        .flexc();
+        background: @main-color;
+        color: #fff;
+        border: 1px #fff solid;
+    }
+    img{
+        width: 100%;
+    }
+}
+.wp{
+    width: 2rem;
+    z-index: 99;
+    height: 2rem;
+    overflow: hidden;
+    border-radius:50%;
+    background: #fff;
+    .flexc();
+    position: fixed;
+    bottom: 60%;
+    display: none;
+    left: calc(50% - 1rem);
+    img{width: 80%;}
+}

@@ -1,0 +1,274 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/main/index",
+			"style": {
+				"navigationStyle":"custom",
+				"app-plus": {
+					"scrollIndicator":"none"
+				}
+			}
+		},{
+			"path": "pages/tabBar/index",
+			"style": {
+				"navigationStyle":"custom",
+				"app-plus": {
+					"scrollIndicator":"none"
+				}
+			}
+		},{
+			"path": "pages/tabBar/home",
+			"style": {
+				"navigationStyle":"custom",
+				"app-plus": {
+					"scrollIndicator":"none"
+				}
+			}
+		},{
+			"path": "pages/tabBar/category",
+			"style": {
+				"navigationStyle":"custom",
+				"app-plus": {
+					"scrollIndicator":"none"
+				}
+			}
+		},{
+			"path": "pages/tabBar/cart",
+			"style": {
+				"navigationStyle":"custom",
+				"app-plus": {
+					"scrollIndicator":"none"
+				}
+			}
+		},{
+			"path": "pages/index/help",
+			"style": {
+				"navigationStyle":"custom",
+				"app-plus": {
+					"scrollIndicator":"none"
+				}
+			}
+		},{
+			"path": "pages/index/cat0",
+			"style": {
+				"navigationStyle":"custom",
+				"app-plus": {
+					"scrollIndicator":"none"
+				}
+			}
+		},{
+			"path": "pages/index/cat1",
+			"style": {
+				"navigationStyle":"custom",
+				"app-plus": {
+					"scrollIndicator":"none"
+				}
+			}
+		},{
+			"path": "pages/index/cat2",
+			"style": {
+				"navigationStyle":"custom",
+				"app-plus": {
+					"scrollIndicator":"none"
+				}
+			}
+		},{
+			"path": "pages/index/cat3",
+			"style": {
+				"navigationStyle":"custom",
+				"app-plus": {
+					"scrollIndicator":"none"
+				}
+			}
+		},{
+			"path": "pages/index/cat4",
+			"style": {
+				"navigationStyle":"custom",
+				"app-plus": {
+					"scrollIndicator":"none"
+				}
+			}
+		},{
+			"path": "pages/index/cat5",
+			"style": {
+				"navigationStyle":"custom",
+				"app-plus": {
+					"scrollIndicator":"none"
+				}
+			}
+		},{
+			"path": "pages/index/cat6",
+			"style": {
+				"navigationStyle":"custom",
+				"app-plus": {
+					"scrollIndicator":"none"
+				}
+			}
+		},{
+			"path": "pages/index/cat7",
+			"style": {
+				"navigationStyle":"custom",
+				"app-plus": {
+					"scrollIndicator":"none"
+				}
+			}
+		},{
+			"path": "pages/index/cat8",
+			"style": {
+				"navigationStyle":"custom",
+				"app-plus": {
+					"scrollIndicator":"none"
+				}
+			}
+		},{
+			"path": "pages/index/cat9",
+			"style": {
+				"navigationStyle":"custom",
+				"app-plus": {
+					"scrollIndicator":"none"
+				}
+			}
+		},{
+			"path": "pages/subpage/demo1",
+			"style": {
+				"navigationStyle":"custom",
+				"app-plus": {
+					"scrollIndicator":"none"
+				}
+			}
+		},{
+			"path": "pages/business/commodity-detail",
+			"style": {
+				"navigationStyle":"custom",
+				"app-plus": {
+					"scrollIndicator":"none"
+				}
+			}
+		},{
+			"path": "pages/business/sort-to-pay",
+			"style": {
+				"navigationStyle":"custom",
+				"app-plus": {
+					"scrollIndicator":"none"
+				}
+			}
+		},{
+			"path": "pages/business/submit-dd",
+			"style": {
+				"navigationStyle":"custom",
+				"app-plus": {
+					"scrollIndicator":"none"
+				}
+			}
+		},{
+			"path": "pages/home/setting",
+			"style": {
+				"navigationStyle":"custom",
+				"app-plus": {
+					"scrollIndicator":"none"
+				}
+			}
+		},{
+			"path": "pages/setting/about-app",
+			"style": {
+				"navigationStyle":"custom",
+				"app-plus": {
+					"scrollIndicator":"none"
+				}
+			}
+		},{
+			"path": "pages/setting/change-pass",
+			"style": {
+				"navigationStyle":"custom",
+				"app-plus": {
+					"scrollIndicator":"none"
+				}
+			}
+		},{
+			"path": "pages/setting/change-pho",
+			"style": {
+				"navigationStyle":"custom",
+				"app-plus": {
+					"scrollIndicator":"none"
+				}
+			}
+		},{
+			"path": "pages/setting/location",
+			"style": {
+				"navigationStyle":"custom",
+				"app-plus": {
+					"scrollIndicator":"none"
+				}
+			}
+		},{
+			"path": "pages/setting/pass-wj",
+			"style": {
+				"navigationStyle":"custom",
+				"app-plus": {
+					"scrollIndicator":"none"
+				}
+			}
+		},{
+			"path": "pages/home/my-jf",
+			"style": {
+				"navigationStyle":"custom",
+				"app-plus": {
+					"scrollIndicator":"none"
+				}
+			}
+		},{
+			"path": "pages/business/award-regular",
+			"style": {
+				"navigationStyle":"custom",
+				"app-plus": {
+					"scrollIndicator":"none"
+				}
+			}
+		},{
+			"path": "pages/business/jf-detail",
+			"style": {
+				"navigationStyle":"custom",
+				"app-plus": {
+					"scrollIndicator":"none"
+				}
+			}
+		},{
+			"path": "pages/information/index",         
+			"style": {
+				"navigationStyle":"custom",
+				"app-plus": {
+					"scrollIndicator":"none"
+				}
+			}
+		},{
+			"path": "pages/information-info/index",         
+			"style": {
+				"navigationBarTitleText": "卡盟商城",
+				"navigationBarTextStyle": "#ffffff",
+				"navigationBarBackgroundColor": "#DE290E"
+			}
+		},{
+			"path": "pages/home/yljl",         
+			"style": {
+				"navigationStyle":"custom",
+				"app-plus": {
+					"scrollIndicator":"none"
+				}
+			}
+		},{
+			"path": "pages/component/tabbar/index",     //公用底部    
+			"style": {
+				"navigationStyle":"custom",
+				"app-plus": {
+					"scrollIndicator":"none"
+				}
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}

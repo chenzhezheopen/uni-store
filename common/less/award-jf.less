@@ -1,0 +1,91 @@
+@import "style.less";
+@import "style1.less";
+
+header{
+    background: #fff;
+}
+html,body{
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    background: #d70004 url(../newimg/other/award-jf.png) no-repeat;
+    background-size:100% auto ;
+    background-position-y: 79px;
+}
+.fx-bottom{
+    position: fixed;
+    bottom: -100%;
+    width: 100%;
+    background: #fff;
+    z-index: 2000;
+    .mui-list-io-tig{
+        padding: 0 .5rem;
+        .top_down{
+            padding: .5rem 0;
+            width:33%;
+        }
+        .img-container{
+            width: .9rem;
+            height: .9rem;
+            img{width: 100%;}
+        }
+    }
+    .fx-out{
+        width: 100%;
+        padding: .3rem 0;
+        .flexc();
+        border-top: 1px #eee solid;
+        img{width: .4rem;height: .4rem;}
+    }
+}
+.content{
+    width: 94%;margin-left: 3%;border-radius: 5px;background: #fff;padding: .7rem .4rem;.flexc();.column();margin-top: 3rem;
+    .info{width: 100%;padding: .3rem;border-radius: 5px;background: linear-gradient(45deg,#f0590a,#fa150d);.column();.flexc();
+        .title-h1{-webkit-text-stroke: .3px #fff; -webkit-text-fill-color:transparent;-webkit-text-stroke-width: 2px;font-size: .5rem;line-height: .9rem;}
+    }
+}
+.addlx{
+    border-radius: 15px;
+    width: 100%;
+    margin-top: 10px;
+    .flex();
+    .che{
+        margin-top: -3px;
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+    }
+    .line-title{
+        flex: 1;
+        margin: 0 10px;
+    }
+    .info2{
+        .flex();
+        .column();
+        .h1{
+            color: #7f4101;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    }
+}
+.yq-btn{
+    width: 90%;
+//  padding: .4rem;
+//  border-radius: 2rem;
+//  font-size: .8rem;
+//  box-shadow: 0px 6px 10px rgba(0,0,0,.4);
+//  color: #fff;
+//  background: linear-gradient(180deg,#f9441c,#ff7b38);
+//  .flexc();
+//  margin-top: 10px;
+}
+.content2{
+    img{
+        width: 1rem;
+    }
+    .num{
+        width: .5rem;height: .5rem;border-radius: 50%;background: red;font-size: .3rem;line-height: .3rem;.flexc();color: #fff;
+    }
+    .num-title{letter-spacing: 1px;margin-top: 10px;font-size: .25rem;}
+}

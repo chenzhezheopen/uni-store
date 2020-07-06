@@ -1,0 +1,61 @@
+@import "style.less";
+@import "style1.less";
+
+header{
+    background: #ffffff;
+}
+html,body{
+    background: #fafafa;;
+    margin: 0;
+    overflow-x: hidden;
+}
+.swiper-slide{
+    background: #fff;
+    width: 100%;
+    padding:0;
+    p{text-indent: 28px;font-size: 15px;padding: 0 15px;margin-top: 10px;letter-spacing: .2px;}
+    .aui-flex{
+        padding: 10px 15px;
+        border-bottom: .5px rgba(0,0,0,.4) solid;
+        width: 100%;
+        position: relative;
+        .flex();
+        .column();
+//      商品选中遮罩
+        .dg{
+            width: 100%;height: 100%;position: absolute;top: 0;left: 0;background: rgba(45,107,144,.6);.flexc();display: none;
+            img{width: 30px;}
+        }
+        .aui-flex-box{
+            width: 100%;
+            .flex();
+            justify-content: space-between;
+        }
+        .aui-flex-box:first-child{
+            margin-bottom: 5px;
+        }
+    }
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    .flex();
+    >bottom{
+        flex: 1;
+        .flexc();
+        border: none;
+        border-radius: 0;
+        padding: 14.5px 0;
+        font-size: 16px;
+        color: #fff;
+    }
+    >bottom:first-child{
+        background: @main-color;
+    }
+    >bottom:last-child{
+        background: #f75202;
+    }
+}

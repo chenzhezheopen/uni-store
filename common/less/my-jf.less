@@ -1,0 +1,86 @@
+@import "style.less";
+@import "style1.less";
+
+header{
+    background: rgba(255,255,255,1);
+}
+html,body{
+    background: @body-color;
+}
+a{
+    color:@font-color ;
+}
+
+.store-list{
+    width: 96%;
+    margin-left: 2%;
+    border-radius: 5px;
+    .flex();
+    justify-content: space-between;
+    flex-wrap: wrap;
+    >div{
+        background: #fff;
+        margin-top: 10px;
+        width: 48%;
+        border-radius: 5px;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        .flexalign();
+        .column();
+        .img-st{
+            width: 100%;
+        }
+        .content{
+            padding: 5px;
+            padding-left: 5px;
+            .flex();
+            width: 100%;
+            .column;
+            .price{
+                margin-top: .2rem;
+            }
+            .price2{
+                margin-top: .1rem;
+                
+            }
+            .name{
+                display: -webkit-box;
+                 -webkit-box-orient: vertical;
+                  -webkit-line-clamp: 2;
+                  overflow: hidden;
+            }
+            .gou{width: 100%;.flexalign();justify-content: space-between;margin: 5px 0;
+                .btn{background: @main-color;.flexc();padding: 6px 12px;width: 100%; color: #fff;font-size: 14px;border-top-left-radius: 3px;border-bottom-left-radius: 3px;margin-right: -7px;}
+            }
+        }
+    }
+}
+.top-title{
+        width: 96%;
+        margin-left: 2%;
+        height: 1rem;
+        .flexalign();
+}
+.jf-content{
+    .flexc();
+    .column();
+    border-radius: 5px;
+    background: #fff;
+    margin: 10px 2%;
+    width: 96%;
+    padding: 50upx 0 40upx 0;
+    .m1{
+        width:120upx;height: 120upx;border-radius: 50%;
+    }
+    .a1{
+        font-size: 24upx;margin-top: 15upx;margin-bottom: 20upx;
+    }
+    .detail-btn{
+        height: 56upx;margin-top:20upx;
+        border-radius: 28upx;
+        padding: 0 20upx;
+        border: 1px @main-color solid;
+        .flexc();
+    }
+}

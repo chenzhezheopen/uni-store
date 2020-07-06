@@ -1,0 +1,39 @@
+@import "style.less";
+@import "style1.less";
+
+header{
+    background: rgba(255,255,255,1);
+}
+html,body{
+    background: @body-color;
+}
+a{
+    color:@font-color ;
+}
+.jf-content{
+    .flex();
+    .column();
+    background: url(../images/cart-top.jpg) no-repeat;
+    background-size: 100% 100%;
+    border-radius: 5px;
+    margin: 10px 3%;
+    width: 94%;
+    padding:.5rem .4rem;
+    .a1{
+        font-size: .3rem;margin-bottom: .3rem;color: #fff;
+    }
+    .a2{
+        font-size: .52rem;
+    }
+}
+.btn-submit{
+    width: 90%;
+    margin-left: 5%;
+    height: .8rem;
+    border-radius: .4rem;
+    color: #fff;
+    .flexc();
+    font-size: .3rem;
+    background: #faab9e;
+    margin-top: .6rem;
+}

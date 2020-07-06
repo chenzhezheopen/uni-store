@@ -1,0 +1,45 @@
+@import "style.less";
+@import "style1.less";
+
+header{
+    background: #fff;
+    border-bottom: .5px #aaa solid;
+}
+html,body{
+    background: #fff;
+}
+.login-inp{
+    height: 80upx;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 40upx;
+    .flexalign();
+    padding: 24upx;
+    margin-top: 60upx;
+    box-shadow: 0px 0px 6px rgba(0,0,0,.1);
+    input{
+        flex: 1;    
+        font-size: 26upx;
+        padding: 5upx 20upx;
+        caret-color:red;
+    }
+    input::-webkit-input-placeholder{
+        color: #aaa;
+        font-size:26upx;
+    }
+    a{font-size: 24upx;min-width: 150upx;}
+	img{
+		width: 40upx;height: 40upx;
+	}
+}
+.btn-submit{
+    width: 90%;
+    margin-left: 5%;
+    height: 80upx;
+    border-radius: 40upx;
+    .flexc();
+    font-size: 26upx;
+    background: #faab9e;
+    margin-top: 50upx;
+    a{color: rgba(255,255,255,.8);}
+}

@@ -1,0 +1,79 @@
+@import "style.less";
+@import "style1.less";
+
+header{
+    background: rgba(255,255,255,1);
+}
+html,body{
+        background: #ef4a5b url("http://www.bolecpw.com/code/uni/newimg/other/help.jpg") no-repeat;
+        background-size:100% auto ;
+        background-position-y: 79px;
+}
+
+.container{
+    margin-top: 300upx;
+    width: 96%;
+    margin-left: 2%;
+    z-index: 999;
+    background: #fff;
+    padding:20upx;
+    border-radius: 10px;
+    .container1{
+        min-height:90upx;
+        border-radius: 10px;
+        border: .5px @main-color dashed;
+        padding: 25px 10upx;
+        position: relative;
+        .title{
+            background: #ffe203;
+            position: absolute;
+            height: 100upx;
+            width: 80%;
+            .flexc();
+            top: -50upx;
+            left: 10%;
+            border-radius: 40px;
+        }
+        .explain-list{
+            .flexalign();
+            margin: 30upx 20upx;
+            .number{
+                width: 50upx;
+                height: 50upx;
+                border-radius: 50%;
+                margin-right: 20upx;
+                background: #f8cd3c;
+                border: .5px @main-color solid;
+                .flexc();
+                a{color: @main-color;}
+            }
+            >a{flex:1;font-size: 26upx;}
+        }
+    }
+}
+
+.h1{
+        .flexc();
+        padding: 40upx;
+        a{font-size: 40upx;color: #fff;margin: 0 20upx;}
+        .line{width: 50upx;height: 2px;background: #fff;}
+    }
+    
+.container3{
+    margin: 20upx auto;
+    width: 96%;
+    padding: 20upx;
+    border-radius: 7px;
+    background: #fff;
+    .flexalign();
+    img{width: 100upx;height:100upx;border-radius:50%;margin-right: 20upx;}
+    a{font-size: 25upx;flex: 1;}
+    .btn{
+        height:701upx;
+        border-radius: .35rem;
+        background:#ef4a5b;
+        .flexc();
+        padding:0 .3rem;
+        a{font-size: .24rem;color: #fff;}
+    }
+}

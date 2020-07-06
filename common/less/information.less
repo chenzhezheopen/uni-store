@@ -1,0 +1,310 @@
+@import "style.less";
+@import "style1.less";
+
+header{
+    background: @top-color1-color;
+}
+html,body{
+    background: @body-color;
+    margin: 0;
+    overflow-x: hidden;
+}
+*{
+    box-sizing: border-box;
+}
+a{
+    color:@font-color ;
+}
+
+@maincolor:#3093F0;
+@becolor:rgba(150,150,150,1);
+@down-block:rgba(220,220,220,1);
+@main-size:16px;
+@bodybac:rgba(237,241,244,1);
+
+.color(@value){
+    color: @value;
+}
+.background(@value){
+    background: @value;
+}
+.linear-grident(@start ,@end){
+    background: linear-gradient(45deg,@start,@end);
+}
+.flex{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.flexc(){
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+     -ms-flex-align:center;
+    -webkit-box-align:center;
+    box-align:center;
+    -webkit-align-items:center;
+    align-items:center;
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+.flexs(){
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+     -ms-flex-align:start;
+    -webkit-box-align:start;
+    box-align:center;
+    -webkit-align-items:flex-start;
+    align-items:flex-start;
+}
+.column(){
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+}
+
+body,html{
+    width: 100%;
+    height: 100%;
+    background: #F9F9F9;
+}
+
+.mui-content{
+    background: none;
+}
+.mui-info-search{
+    padding: 0 3%;
+    padding-top: 45px;
+    background: #FAFAFA;
+    .flex();
+    flex-direction: column;
+    .search-main{
+        position: relative;
+        .flexc();
+        .search-title{
+            font-size: 20px;
+            font-weight: bold;
+            color: #000000;
+            margin-left: 3%;
+        }
+        .search-contain{
+            flex: 1;
+            position: relative;
+        }
+        .search{
+            padding-left: 40px;
+            
+            height: 34px;
+            border-radius: 17px;
+            border: none;
+            background: #ECECEC;
+            font-size: 14px;
+            color:#A7A7A7 ;
+            
+        }
+        .search-contain:before{
+            position: absolute;
+            content: '';
+            left: 10px;
+            width: 20px;
+            height: 20px;
+            top:7px ;
+            background: url(http://www.bolecpw.com/code/uni/images/iconfont/search2.png);
+            background-size: 100% 100%;
+            
+        }
+        img{
+            width: 20px;
+            margin-right: 15px;
+        }
+    }
+    .mui-info-number{
+        .flex();
+        margin: 10px 0;
+        align-items: center;
+        *{
+            font-size: 12px;
+            color: #666666;
+        }
+        img{
+            width: 15px;
+            margin:0 5px 0 20px;
+        }
+    }
+}
+
+.kind{
+    width: 94%;
+    margin-left: 3%;
+    margin-top: 10px;
+    border-radius: 15px;
+    .flexc();
+    flex-wrap: wrap;
+    background: #ffffff;
+    box-shadow: 0px 1px 5px #cccccc;
+    >div{
+        padding: 15px 0 15px 10px;
+        width: 50%;
+        position: relative;
+        .flex();
+        align-items: center;
+        .icon-contain{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin: 0 10px 0 10%;
+            .flexc();
+            overflow: hidden;
+            background: linear-gradient(@mk-rgba-color1,@mk-rgba-color2);
+            img{
+                width: 70%;
+            }
+        }
+        *{
+            font-size: 16px;
+            color: #000000;
+        }
+    }
+    >div:nth-child(2n-1):before{
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 15%;
+        width: .5px;
+        background: #cccccc;
+        height: 70%;
+    }
+}
+
+.mui-info-detail{
+    width: 100%;
+    padding: 0 3%;
+    margin-top: 20px;
+    background: #ffffff;
+    .mui-info-detail-title{
+         padding: 10px 0;
+         width: 100%;
+         .flex();
+         align-items: center;
+         img{
+             width: 20px;
+             margin-right: 3%;
+         }
+         *{
+             color: #000000;
+             font-size: 16px;
+         }
+    }
+    .mui-menu{
+        padding: 10px 0;
+        width: 100%;
+        position: relative;
+        border-bottom: .5px #cccccc solid;
+        .flex();
+        .img-contain{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+            overflow: hidden;
+            .flexc();
+            img{
+                width: 100%;
+            }
+        }
+        .mui-box{
+            flex: 1;
+            >div{
+                margin: 3px 0;
+                .flex();
+                align-items: center;
+                justify-content: space-between;
+                .info-xt{
+                    font-size: 16px;
+                    color: #753518;
+                }
+                .info-yg{
+                    font-size: 16px;
+                    color: #000000;
+                }
+                .down-info{
+                    font-size: 14px;
+                    color: #B0B0B0;
+                }
+                .number{
+                    height: 16px;
+                    border-radius: 8px;
+                    background: red;
+                    padding: 0px 5px;
+                    .flexc();
+                    *{
+                        font-size:12px;
+                        color: #ffffff;
+                        line-height: 12px;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+.scroll-block{
+    padding: 50px 0 10px 3%;
+    position: fixed;
+    z-index: 9999;
+    display: none;
+    background: #FBFBFB;
+    top: 0;
+    width: 100%;
+//  .flex();
+    >div{
+        width: 100%;
+        *{
+            font-size: 18px;
+            color: #000000;
+        }
+        img{
+            width: 20px;
+            margin-right: 15px;
+        }
+    }
+    >div:first-child{
+        .flexc();
+    }
+    >div:last-child{
+        .flex();
+        align-items: center;
+        flex-direction: row-reverse;
+        margin-left: -100%;
+        
+    }
+}
+
+.touch{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    .flexc();
+    display: none;
+    div{
+        width: 0;
+        height: 100%;
+        background:linear-gradient(90deg, rgba(226,226,226,1),rgba(236,236,236,1),rgba(226,226,226,1));
+        opacity: 0;   
+    }
+}
+//mui改变内置
+.mui-scroll{
+    top: 0;
+}
+.mui-pull-top-pocket{
+    position: relative;
+    
+}
+
+

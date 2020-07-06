@@ -1,0 +1,347 @@
+html,body{
+	width: 100%;
+	height: 100%;
+}
+
+/*清楚mui.css样式重叠*/
+input[type=color], input[type=date], input[type=datetime-local], input[type=datetime], input[type=email], input[type=month], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], input[type=week], select, textarea {
+     margin-bottom: 0px; 
+     border: none; 
+     background-color: none; 
+     background: none;
+}
+
+a{
+	color: #000;
+	font-size: 14px;
+}
+
+/*大部分说明文字字体颜色*/
+.color2{
+	color: #888;
+	font-size: 14px;
+}
+.color4{
+    color:#ffffff;
+}
+.color3{
+    color:#2196f3;
+}
+.color1{
+	color: #2d6b90;
+}
+.flex1{
+	flex: 1;
+}
+p{
+	color: #000;
+	margin-bottom: .1rem;
+}
+header{
+	padding-top: 40px;
+}
+/*自定义简化css*/
+.flex_a_center{
+	display: flex;
+	align-items: center;
+}
+.flex_center{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/*标题加图标分类下面显示文字*/
+	   	.mui-list-io{
+	   		width: 96%;
+	   		margin: 10px auto;
+	   	}
+	   	.mui-list-io-tig{
+	   		width: 100%;
+	   		display: flex;
+	   		/*justify-content: space-between;*/
+	   		flex-wrap: wrap;
+	   		align-items: center;
+	   	}
+	   	.mui-list-io-tig .img-container{
+	   		width: 50px;
+	   		height: 50px;
+	   		border-radius: 50%;
+	   		overflow: hidden;
+	   		margin-bottom: 6px;
+	   	}
+	   	.mui-list-io-tig .top_down{
+	   		align-items: center;
+	   		display: flex;
+	   		flex-direction: column;
+	   	}
+	   	.mui-list-io-tig .top_down p{
+	   		font-size: 14px;
+	   	}
+	   	.mui-list-io .mui-list-io-explain{
+	   		width: 100%;
+	   		display: flex;
+	   		padding: 10px 0;
+	   	}
+	   	.mui-list-io .mui-list-io-explain>div:first-child{
+	   		flex: 1;
+	   	}
+	   	.mui-list-io .mui-list-io-explain .mui-io-right{
+	   		display: flex;
+	   		align-items: center;
+	   	}
+	   	.mui-list-io .mui-list-io-explain .mui-io-right img{
+	   		width: 12px;
+	   	}
+	   	.mui-list-io .mui-list-io-explain .mui-io-right a{
+	   		font-size: 15px;
+	   		margin-right: 3px;
+	   	}
+	   	
+	   	
+	   	.mui-list-io-explain{
+	   		width: 100%;
+	   		display: flex;
+	   		padding: 10px 0;
+	   	}
+	   	.mui-list-io-explain>div:first-child{
+	   		flex: 1;
+	   	}
+	   	.mui-list-io-explain .mui-io-right{
+	   		display: flex;
+	   		align-items: center;
+	   	}
+	   	.mui-list-io-explain .mui-io-right img{
+	   		width: 12px;
+	   	}
+	   	.mui-list-io-explain .mui-io-right a{
+	   		font-size: 15px;
+	   		margin-right: 3px;
+	   	}
+
+/*同上一个标题分类但没扇面类别************************/
+	   	.mui-menu-tig{
+	   		width: 92%;
+	   		margin: 10px auto;
+	   		display: flex;
+	   		flex-wrap: wrap;
+	   	}
+	   	.mui-menu-tig>div{
+	   		margin: 5px 0;
+	   	}
+	   	.mui-menu-tig .size25{
+	   		width: 25%;
+	   		display: flex;
+	   		align-items: center;
+	   		justify-content:space-between;
+	   		
+	   	}
+	   	.mui-menu-tig .top_down p{
+	   		font-size:14px ;
+	   	}
+	   	.mui-menu-tig .size25{
+	   		width: 25%;
+	   		display: flex;
+	   		justify-content: space-between;
+	   		flex-direction: column;
+	   		align-items: center;
+	   	}
+	   	.mui-menu-tig  .img-container{
+	   		width: 40px;
+	   		height: 40px;
+	   		position: relative;
+	   		border-radius:50% ;
+	   		display: flex;
+	   		align-items: center;
+	   		justify-content: center;
+	   	}
+	   	.mui-menu-tig  .img-container>img{
+	   		width: 100%;
+	   	}
+	   	.mui-menu-tig .size25 .lab p:first-child{
+	   		font-size: 15px;
+	   		font-weight: bold;
+	   	}
+	   	
+	   	.mui-menu-tig .size25 .lab p:last-child{
+	   		font-size: 14px;
+	   	}
+	   	.mui-menu-tig .img-container .img_lable{
+	   		padding: 2px 3px;
+	   		display: flex;
+	   		align-items: center;
+	   		justify-content: center;
+	   		font-size: 12px;
+	   		line-height: 12px;
+	   		position: absolute;
+	   		left: 60%;
+	   		bottom: 0;
+	   		white-space: nowrap;
+	   		border-radius: 4px;
+	   	}
+	   	.eg{
+	   		/*align-items: start !important;*/
+	   	}
+	   	.eg .lab{
+	   		    justify-content: end;
+			    display: flex;
+			    flex-direction: column;
+			    margin-right: 2rem;
+			    width: 100%;
+	   	}
+	   	/*左边图标右边内容*/
+            	/*.tub{
+            		display: flex;
+            		align-items: center;
+            	}
+            	.tub .tub_left{
+            		width: 30px;
+            		height: 30px;
+            		border-radius: 50%;
+            		margin-right: 10px;
+            		overflow: hidden;
+            	}
+            	.tub .tub_left img{
+            		width: 100%;
+            	}
+            	.tub .tub_right{
+            		display: flex;
+            		justify-content: space-between;
+            		flex-direction: column;
+            	}
+            	.tub .tub_right a:first-child{
+            		font-size: 16px;
+            	}
+            	.tub .tub_right a:last-child{
+            		font-size: 12px;
+            	}*/
+/*输入框*/
+/*<div class="aui-center2" style="margin: 0 10px ;">
+        		<img src="images/iconfont/search.png" class="search_img"/>
+            	<input type="text" id="search" placeholder="请输入面料品牌，品牌名称等" />
+        	</div>*/
+.aui-center2{
+	background: #e8f2fb;
+	width: 90%;
+	border-radius: 5px;
+	padding: 0px 14px;
+	display: flex;
+	margin: 15px auto;
+	align-items: center;
+	min-height: 30px;
+}
+.search_img{
+	width: 20px;
+	height: 20px;
+	/*margin-right: 8px;*/
+}
+.search{
+	flex: 1;
+	border: none;
+	background: none;
+	font-size: 14px;
+}
+.search::-webkit-input-placeholder{
+	font-size: 12px;
+}
+
+
+.shade{
+	width: 100%;
+	height: 79px;
+}
+
+
+/*只显示一行文字超过部分点代替*/
+.ellipsis{
+	max-width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+
+/*图片查看*/
+.mui-preview-image.mui-fullscreen {
+				position: fixed;
+				z-index: 20;
+				background-color: #000;
+			}
+ 			.mui-preview-header{
+ 				position: absolute;
+ 				bottom: 0;
+ 			}
+			.mui-preview-header .mui-preview-indicator {
+				display: block;
+				line-height: 25px;
+				color: #fff;
+				text-align: center;
+				margin: 15px auto 4;
+				width: 70px;
+				background-color: rgba(0, 0, 0, 0.4);
+				border-radius: 12px;
+				font-size: 16px;
+			}
+			.mui-preview-image {
+				display: none;
+				-webkit-animation-duration: 0.5s;
+				animation-duration: 0.5s;
+				-webkit-animation-fill-mode: both;
+				animation-fill-mode: both;
+			}
+			.mui-preview-image.mui-preview-in {
+				-webkit-animation-name: fadeIn;
+				animation-name: fadeIn;
+				z-index: 2000;
+			}
+			.mui-preview-image.mui-preview-out {
+				background: none;
+				-webkit-animation-name: fadeOut;
+				animation-name: fadeOut;
+			}
+			.mui-zoom-scroller {
+				position: absolute;
+				display: -webkit-box;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-box-align: center;
+				-webkit-align-items: center;
+				align-items: center;
+				-webkit-box-pack: center;
+				-webkit-justify-content: center;
+				justify-content: center;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				margin: 0;
+				-webkit-backface-visibility: hidden;
+			}
+ 
+			.mui-slider .mui-slider-group .mui-slider-item img {
+				width: auto;
+				height: auto;
+				max-width: 100%;
+				max-height: 100%;
+			}
+ 
+ 
+			@-webkit-keyframes fadeIn {
+				0% {
+					opacity: 0;
+				}
+				100% {
+					opacity: 1;
+				}
+			}
+			@-webkit-keyframes fadeOut {
+				0% {
+					opacity: 1;
+				}
+				100% {
+					opacity: 0;
+				}
+			}
+			

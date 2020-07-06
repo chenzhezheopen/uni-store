@@ -1,0 +1,164 @@
+@import "style.less";
+@import "style1.less";
+
+header{
+    background: #ffffff;
+}
+html,body{
+    background: #fafafa;;
+    margin: 0;
+    overflow-x: hidden;
+}
+*{
+    box-sizing: border-box;
+}
+a{
+    color:@font-color ;
+}
+#nav-wrap{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    padding-bottom: 0.2rem;
+    top: 0;
+    #search{
+        height: 36px;
+        border-radius: 18px;
+//      border: 1px @main-color solid;
+        font-size: 14px;
+        padding-right: 30px;
+        background: #fff;
+    }
+    #search-btn{
+        height: 30px;
+        border-radius: 15px;
+        color: #fff;
+        font-size: 14px;
+        margin: 0 .2rem;
+        padding: 0px 10px;
+        background: linear-gradient(50deg,@mk-rgba-color1,@mk-rgba-color2);
+        
+    }
+}
+
+
+#search::-webkit-input-placeholder{
+    font-size: 14px;
+    color: #444;
+}
+.aui-navBar-item:first-child{
+    min-width: auto;
+    width: auto;
+    margin: 0 .2rem;
+    margin-right: 0;
+}
+.aui-center{
+    min-width: auto;
+    width: auto;
+    margin-left: 10px;
+    flex: 1;
+    height: 36px;
+    position: relative;
+    .clean{
+        width: 30px;
+        height: 100%;
+        right: 0px;
+        top: 0;
+        .flexc();
+        position: absolute;
+        display: none;
+        img{
+            width: 16px;
+            height: 16px;
+        }
+    }
+}
+.content{
+    padding: 0 .2rem;
+}
+.result-list{
+    .flexalign();
+    border-bottom: .5px rgba(0,0,0,.1) solid;
+    padding: 10px 0;
+    .result-word{
+        flex: 1;
+        a{
+            font-size: 14px;
+            color: #000;
+        }
+    }
+    img{
+        width: 16px;
+        height: 16px;
+    }    
+}
+.bqian{
+    p{
+        font-size: 15px;
+        color: #000;
+        font-weight: bold;
+        margin: 0;
+    }
+}
+//搜索发现
+.popular1{
+    .find-content{
+        width: 100%;
+        .flex();
+        flex-wrap: wrap;
+        >div{
+            margin-right: 8px;
+            height: 30px;
+            border-radius: 15px;
+            padding: 0 10px;
+            font-size: 13px;
+            color: #444;
+            margin-top: 5px;
+            background: @body-color;
+            line-height: 13px;
+            .flexc();
+        }
+    }
+}
+.mui-list-io-explain .mui-io-right img{
+    width: 20px;
+}
+//全网热榜
+.popular2{
+    .bqian{
+        p{
+            display: -webkit-inline-box;
+            -webkit-text-fill-color: transparent;
+            background: linear-gradient(45deg, @main-rgba-color1, @main-rgba-color2);
+            -webkit-background-clip: text;
+        }
+    }
+    .mui-list-io-explain .mui-io-right img{
+        width: 10px;
+    }
+    .many-content{
+        width: 100%;
+        border-radius: 15px;
+        background: #fff;
+        padding: .2rem;
+        .mui-menu{
+            .flexalign();margin-bottom: 10px;
+            .rank{
+                .flexc();
+                a{font-size: 14px;    margin: 0 10px 0 0;}
+            }
+            .img-contain{
+                height: 60px;width: 60px;border-radius: 5px;overflow: hidden;
+                img{width: 100%;height: 100%;}
+            }
+            .mui-box{
+                .flex();.column();margin-left: 10px;flex: 1;
+                a:first-child{font-size: 14px;color: #000;line-height: 16px;}
+                a{font-size: 12px;color: #888;margin-top: 5px;line-height: 12px;}
+            }
+            .tag{padding: 3px;color: @main-color;border:.5px @main-color solid;border-radius: 3px;background: rgba(45,107,144,.2);font-size: 12px;line-height: 12px;}
+        }
+    }
+}
+

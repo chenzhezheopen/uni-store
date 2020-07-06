@@ -1,0 +1,120 @@
+@import "style.less";
+@import "style1.less";
+html,body{
+    width: 100%;
+    overflow-x: hidden;
+    background: @body-color;
+}
+.commodity{
+    top: 0;
+    left: 0;
+    width: 100%;
+    .commodity-detail{
+        .flex();
+        background: #fff;
+        border-radius: 5px;
+        .check-btn{
+            margin-top: 32.5px;
+        }
+//                  商品图片
+        .commodity-img{
+            width: 90px;
+            height: 90px;
+            border-radius: 5px;
+            overflow: hidden;
+            .flexc();
+            img{
+                width: 100%;
+            }
+        }
+        .commodity-title{
+            flex: 1;
+            padding: 0 3%;
+            position: relative;
+//                      商品名称
+            .commodity-name{
+                margin-bottom: 10px;
+                width:calc(100% - 60px);
+                color: #000000;
+                font-size: 14px;
+                line-height: 20px;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                overflow: hidden;
+                display: -webkit-box;
+            }
+            .price-and-number{
+                position: absolute;
+                right: 0;
+                top: 0;
+                .flex();
+                .column();
+                align-items: flex-end;
+                width: 60px;
+            }
+            .price-and-number{
+                
+            }
+//                      商品类别
+            .category{
+                background: rgba(150,150,150,.1);
+                border-radius: 5px;
+                padding: 4px 7px;
+                font-size: 12px;
+                line-height: 18px;
+                color: #000;
+                margin-top: 20px;
+                border-radius: 13px;
+            }
+//                      自定义文字
+            .will{
+                padding: 5px;
+                .flex();
+                color: red;
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+    }
+}
+.btn-jh{
+    margin-top: 10px;
+    .flexalign();
+    padding: 10px 0px 0px 10px;
+    justify-content: flex-end;
+    >div{
+        .flexc();
+        margin-left: .2rem;
+        padding: .2rem;
+        font-size: .3rem;
+        line-height: 14px;
+        height: .55rem;
+        border-radius:.275rem;
+        border: .5px #aaa solid;
+        width: 1.7rem;
+    }
+    >div:last-child{
+        border: .5px red solid;
+        color: red;
+    }
+}
+.menu{
+    background: #fff;
+    padding: .3rem;
+    width: 96%;margin-left: 2%;border-radius: 5px;
+                
+//                      金额与数量
+    .commodity-pay{
+        .flexalign();
+        padding: 10px 0;
+        justify-content: flex-end;
+    }
+    .sort-top{
+        .flexalign();margin-bottom: 15px;
+        img{width: .35rem;height: .35rem;}
+        .fg{margin: 0 .2rem;}
+    }
+}
+.commodity .menu{
+    margin-top: 10px;
+}

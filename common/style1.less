@@ -1,0 +1,285 @@
+@import "style.less";
+//定义简化css
+.color(@value){
+    color: @value;
+}
+.background(@value){
+    background: @value;
+}
+.linear-grident(@start ,@end){
+    background: linear-gradient(45deg,@start,@end);
+}
+
+@media (min-width: 320px){html{font-size: 42.6667px;} }
+@media (min-width: 360px){html{font-size: 48px;} }
+@media (min-width: 375px){html{font-size: 50px;} }
+@media (min-width: 384px){html{font-size: 51.2px;} }
+@media (min-width: 414px){html{font-size: 55.2px;} }
+@media (min-width: 448px){html{font-size: 59.7333px;} }
+@media (min-width: 480px){html{font-size: 48px;} }
+@media (min-width: 512px){html{font-size: 68.2667px;} }
+@media (min-width: 544px){html{font-size: 72.5333px;} }
+@media (min-width: 576px){html{font-size: 76.8px;} }
+@media (min-width: 608px){html{font-size: 81.0667px;} }
+@media (min-width: 640px){html{font-size: 85.3333px;} }
+@media (min-width: 750px){html{font-size: 100px;} }
+
+.icon{
+    width: 20px;
+    height: 20px;
+    img{
+        width: 100%;
+    }
+}
+.flex(){
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.flexc(){
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+     -ms-flex-align:center;
+    -webkit-box-align:center;
+    box-align:center;
+    -webkit-align-items:center;
+    align-items:center;
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+.flexalign(){
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+     -ms-flex-align:center;
+    -webkit-box-align:center;
+    -webkit-align-items:center;
+    align-items:center;
+}
+.column(){
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+}
+.mt-10{
+    margin-top: 10px;
+}
+.mb-10{
+    margin-bottom: 10px;
+}
+//选中
+//<div class="check-btn">
+//  <img src="images/iconfont/gou2.png">
+//</div>
+.check-btn{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border:1px @main-color solid;
+    background: #ffffff;
+    .flexc();
+    img{
+        display: none;
+        width: 70%;
+    }
+}
+
+
+//<div class="from-menu">
+//  <div class="input-container">
+//      <a href="">原密码</a>
+//      <input type="text" placeholder="请输入原密码" />
+//      <img src="image/QQ.png" style="width: 20px;"/>
+//  </div>
+//  <div class="input-container">
+//      <a href="">新密码</a>
+//      <input type="text" placeholder="请输入新密码" />
+//      <img src="image/QQ.png" style="width: 20px;"/>
+//  </div>
+//  <div class="input-container">
+//      <input type="text" placeholder="请输入验证码" />
+//      <input type="button" value="获取验证码" />
+//  </div>
+//</div>
+//<input type="button" class="sublim-btn" value="确认修改" />
+
+.from-menu{
+    width: 100%;
+    background: #ffffff;
+    padding: 0 .2rem;
+    border-bottom: 1px rgba(200,200,200,1) solid;
+    border-top: 1px rgba(200,200,200,1) solid;
+    margin-top: 10px;
+    .input-container:last-child{
+         border-bottom: none;
+    }
+    .input-container{
+        .flexc();
+        width: 100%;
+        padding: 7px 0;
+        border-bottom: 1px rgba(200,200,200,1) solid;
+        a{
+            margin-right: 8px;
+            font-size: 14px;
+            color: #000000;
+            white-space: nowrap;
+        }
+        .input-center{
+            flex: 1;
+            .flex();
+            .column();
+            a:first-child{
+                font-weight: bold;
+            }
+            a:last-child{
+                 color: #888;
+            }
+        }
+        input[type="text"]{
+            flex: 1;
+            .flexc();
+            align-items: flex-start;
+            background: none;
+            border: none;
+            outline: none;
+            font-size: 14px;
+            margin: 0 !important;
+            width: calc(100% - 80px) !important;
+            padding: 2px 0 !important;
+        }
+         input[type="button"]{
+            background: #2C98FB;
+            color: #ffffff;
+            border: none;
+            height: 22px;
+            border-radius: 11px;
+            outline: none;
+            font-size: 12px;
+            margin: 0 !important;
+            padding: 4px 10px !important;
+        }
+    }
+}
+
+.from-menu2{
+    width: 100%;
+    background: #ffffff;
+    padding: 0 .2rem;
+    border-bottom: 1px rgba(200,200,200,1) solid;
+    border-top: 1px rgba(200,200,200,1) solid;
+    margin-top: 10px;
+    .title{
+         padding: 14px 0;
+        .flexalign();
+        font-size: 16px;
+        border-bottom: 1px rgba(200,200,200,1) solid;
+    }
+    .input-container:last-child{
+         border-bottom: none;
+    }
+    .input-container{
+        .flex();
+        width: 100%;
+        padding: 7px 0;
+        border-bottom: 1px rgba(200,200,200,1) solid;
+        .img-container{
+            .flexc();
+            img{
+                width: 30px;
+                height: 30px;
+                margin-right: 10px;
+            }
+        }
+        .input-center{
+            flex: 1;
+            .flex();
+            .column();
+            a:first-child{
+            }
+            a:last-child{
+                margin-top: 5px;
+                 color: #888;
+            }
+        }
+        .check-container{
+            .flexc();
+            min-width: 30px;
+            .check{
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                border: 1px #444 solid;
+                .flexc();
+                img{
+                    width: 70%;
+                }
+            }
+            .check-in{
+                border: none !important;
+                // background: @main-color url(../images/iconfont/gou.png) center center no-repeat;
+                background-size: 70% 70%;
+            }
+        }
+    }
+}
+
+.sublim-btn{
+  width: 90%;
+  margin: 20px 0% 0 5%;
+  height: 40px;
+  font-size: 16px;
+  background:@main-color !important;
+  border-radius: 5px;
+  color:#ffffff !important;
+  border: none !important;
+}
+
+
+//触碰属性添加touch-active即可
+.touch-active{position: relative;}
+.touch-container{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 1;
+    .flexc();
+    .touch{
+        width: 0%;
+        height: 100%;
+        opacity: 1;
+        background: rgba(0,0,0,.1);
+    }
+}
+
+//特效文字只需给文字背景实现特效
+.special{
+    background-size: 100% 100%;
+    background-clip: border-box;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+
+//清楚滑动条
+*::-webkit-scrollbar{
+    display: none;
+}
+::-webkit-scrollbar {display: none;}
+.mui-scrollbar-indicator{display: none !important;}
+
+
+//覆盖swiper样式
+.swiper-slide,.swiper-wrapper，.swiper-container{
+    height: auto;
+}

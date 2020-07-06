@@ -1,0 +1,190 @@
+@import "style.less";
+@import "style1.less";
+
+header{
+    background: rgba(255,255,255,0);
+}
+html,body{
+    background: @body-color;
+}
+a{
+    color:@font-color ;
+}
+.opt{
+    opacity: 0;
+}
+
+//add
+.aui-detail-zc:before{
+    content: '';
+    width: 1px;
+    height: 30%;
+    top: 35%;
+    left: calc(50% - .5px);
+    background: #ccc;
+    position: absolute;
+}
+.aui-detail-zc{
+    position: relative;
+    width: 94%;
+    margin-left: 3%;
+    border-radius: 5px;
+    background: #fff;
+    .flex();
+    >div{
+        padding: .4rem 0;
+        flex: 1;
+        .flexc();
+        img{width: 90upx;height: 90upx;margin-right: 10upx;}
+        .detail{
+            .flex();
+            justify-content: space-between;
+            .column();
+            >*{margin: 5px 0;}
+        }
+    }
+}
+.aui-head-chang{
+    z-index: 9;
+    width: 100%;
+    z-index: 10;
+    padding: 50px 10px 20px 10px;
+    .flexalign();
+    .header-img{width: 100upx;height: 100upx;border: 1px rgba(255,255,255,.4) solid;border-radius: 50%;margin-right: 15px;}
+    .detail{
+        .flex();
+        justify-content: space-between;
+        .column();
+        >*{
+            margin: 5px 0;
+        }
+    }
+}
+.dd-info{
+    width: 94%;
+    margin-left: 3%;
+    border-radius: 5px;
+    padding: 10upx;
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
+    background: #fff;
+    margin-top: 10px;
+    .flex();
+    .aui-palace{
+        flex: 1;
+    }
+}
+.add-tig{
+    .top_down{
+        flex: 1;
+        p{font-size: 25upx !important;
+            margin-top: .05rem;
+        }
+    }
+}
+.mui-list-io-tig{
+    padding: .2rem 0;
+    .img-container{
+        width: 55upx;
+        overflow: auto;
+        height: 55upx;
+        img{
+            width: 100%;
+        }
+    }
+}
+.mui-list-io-tig1{
+    width: 75%;
+}
+.mui-list-io-tig2{
+    flex: 1;
+    position: relative;
+    padding-left: 10px;
+    .line-left{position: absolute;width: 10px;height: 100%;left: 5px;top: 0;background: url(http://www.bolecpw.com/code/uni/newimg/home/fa.png) no-repeat;background-size: 100% 100%;}
+}
+.mui-list-io{
+    padding: 5upx 0 10px 0;
+    .tig-title{
+        padding: 10px 20upx 10px 40upx;
+    }
+    .mui-list-io-tig{
+        padding: 0;
+        .size25{
+            width: 25%;
+            .img-container{
+                width: 90upx;
+                height: 90upx;
+            }
+            p{
+				font-size: 25upx !important;
+                margin-top: 5upx;
+            }
+        }
+    }
+}
+.store-list{
+    width: 96%;
+    margin-left: 2%;
+    border-radius: 5px;
+    .flex();
+    justify-content: space-between;
+    flex-wrap: wrap;
+    >div{
+        background: #fff;
+        margin-top: 10px;
+        width: 48%;
+        border-radius: 5px;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        .flexalign();
+        .column();
+        .img-st{
+            width: 100%;
+        }
+        .content{
+            padding: 5px;
+            padding-left: 5px;
+            .flex();
+            width: 100%;
+            .column;
+            .price{
+                margin-top: .2rem;
+            }
+            .price2{
+                margin-top: .1rem;
+                
+            }
+            .name{
+                display: -webkit-box;
+                 -webkit-box-orient: vertical;
+                  -webkit-line-clamp: 2;
+                  overflow: hidden;
+            }
+            .gou{width: 100%;.flexalign();justify-content: space-between;margin: 5px 0;
+                .btn{background: @main-color;.flexc();padding: 6px 12px;width: 100%; color: #fff;font-size: 14px;border-top-left-radius: 3px;border-bottom-left-radius: 3px;margin-right: -7px;}
+            }
+        }
+    }
+}
+.top-title{
+        width: 100%;
+        height: 40px;
+        .flexc();
+        .title{
+            .flexc();
+            height: 40px;
+            padding: 0 1rem;
+            border-radius: 20px;
+            letter-spacing: 2px;
+            background: linear-gradient(45deg,#f39a36,#f4bad0);
+        }
+    }
+    body{
+            overflow: scroll;
+    }
+    body::-webkit-scrollbar{
+    width: 16px;
+    height: 16px;
+    background-color: red;
+}
+ 

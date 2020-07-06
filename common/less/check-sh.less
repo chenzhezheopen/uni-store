@@ -1,0 +1,103 @@
+@import "style.less";
+@import "style1.less";
+
+header{
+    background:#fff;
+    border-bottom: 1px #ccc solid;
+}
+html,body{
+    background: @body-color;
+}
+.con{background: #fff;border-radius: 10px;box-shadow: 0px 0px 6px rgba(0,0,0,.1);width: 96%;margin-left: 2%;overflow: hidden;margin-top: 10px;
+    .addlx:not(:first-child){
+        border-top: .5px #ccc solid;
+    }
+}
+.addlx{
+    background: #fff;
+    padding: 20px .2rem;
+    width: 100%;
+    .flexalign();
+    .che{
+        margin-top: -3px;
+        width: 20px;
+        height: 20px;
+    }
+    .type{margin: 0 .2rem;}
+    .info{
+        flex: 1;
+        margin: 0 10px;
+        display: flex;
+        .column();
+        align-items: flex-end;
+        .line-title{font-size: .25rem;text-align: right;text-align-last: left;margin-top: 5px;}
+    }
+    .info2{
+        .flex();
+        .column();
+        .h1{
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    }
+}
+.menu{
+    background: #fff;
+    padding: .2rem;
+}
+.commodity{
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding-top: 10px;
+//  提示
+    .ts{
+        background: #efefef;border-radius: 13px;height: 26px;padding: 0 8px;text-align: center;
+    }
+    .commodity-detail{
+        .flex();
+        background: #fff;
+        border-radius: 5px;
+        .check-btn{
+            margin-top: 32.5px;
+        }
+//                  商品图片
+        .commodity-img{
+            width:1.4rem;
+            border-radius: 5px;
+            overflow: hidden;
+            .flexc();
+            img{
+                width: 100%;
+            }
+        }
+        .commodity-title{
+            flex: 1;
+            padding: 0 3%;
+            position: relative;
+            .flex();
+            .column();
+            justify-content: space-between;
+//                      商品名称
+            .commodity-name{
+                margin-bottom: 10px;
+                color: #000000;
+                font-size: 14px;
+                line-height: 20px;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                overflow: hidden;
+                display: -webkit-box;
+            }
+        }
+    }
+}
+.commodity .menu{
+    margin-top: 10px;
+}
+.menu{
+    background: #fff;
+    padding: .3rem;
+    width: 100%;border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;
+}
